@@ -63,7 +63,7 @@ lines(x = d$Time, y = d$Sub_metering_3, col = "blue")
 axis(side = 1, at = c(unique(d$Date), ""), labels = c("Thu", "Fri", "Sat"))
 axis(side = 2, at = c(0, 10, 20, 30), labels = c(0, 10, 20, 30))
 legend("topright", legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), 
-       col = c("black", "red", "blue"), lty = c(1, 1, 1))
+       col = c("black", "red", "blue"), lty = c(1, 1, 1), bty = "n")
 
 # lower right: Global Reactive Power
 plot(x = d$Time, y = d$Global_reactive_power, type = "l", xlab = "datetime", ylab = "Global Reactive Power")
